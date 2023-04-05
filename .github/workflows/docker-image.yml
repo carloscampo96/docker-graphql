@@ -31,4 +31,4 @@ jobs:
     
     - name: Push docker image
       run:
-        docker push campo96/docker-graphql:0.0.2 .
+        docker push campo96/docker-graphql:0.0.2
