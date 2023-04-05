@@ -26,10 +26,10 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         
     - name: Build docker image
-      run:
+      run: |
         docker build -t campo96/docker-graphql:0.0.2 .
         docker build -t campo96/docker-graphql:latest .
     - name: Push docker image
-      run:
+      run: |
         docker push campo96/docker-graphql:0.0.2
         docker push campo96/docker-graphql:latest
