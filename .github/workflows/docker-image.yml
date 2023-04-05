@@ -28,7 +28,8 @@ jobs:
     - name: Build docker image
       run:
         docker build -t campo96/docker-graphql:0.0.2 .
-    
+        docker build -t campo96/docker-graphql .
     - name: Push docker image
       run:
         docker push campo96/docker-graphql:0.0.2
+        docker push campo96/docker-graphql
